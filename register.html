@@ -3,11 +3,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="keywords" content="Nurin'sLibrar, Library Registration, Register, Library Management System">
+
+<meta name="description" content="Register an account to access Nurin'sLibrar Library Management System.">
+
+<meta name="author" content="Nurin">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Nurin'sLibrar</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,50 +27,88 @@
         <div class="login-card">
 
             <div class="text-center mb-4">
-                <div class="book-icon">📚</div>
+
+                <!-- Nurin'sLibrar Logo -->
+                <img src="logo nurin.png"
+                     alt="Nurin'sLibrar Logo"
+                     class="login-logo">
+
                 <h1>Nurin'sLibrar</h1>
+
                 <p>Create your library account</p>
+
             </div>
 
             <form id="registerForm">
+
                 <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" id="fullName" class="form-control"
-                           placeholder="Enter your full name" required>
+                    <label for="fullName" class="form-label">
+                        Full Name
+                    </label>
+
+                    <input type="text"
+                           id="fullName"
+                           class="form-control"
+                           placeholder="Enter your full name"
+                           required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="registerEmail" class="form-label">Email Address</label>
-                    <input type="email" id="registerEmail" class="form-control"
-                           placeholder="Enter your email" required>
+                    <label for="registerEmail" class="form-label">
+                        Email Address
+                    </label>
+
+                    <input type="email"
+                           id="registerEmail"
+                           class="form-control"
+                           placeholder="Enter your email"
+                           required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="registerPassword" class="form-label">Password</label>
-                    <input type="password" id="registerPassword" class="form-control"
-                           placeholder="Create a password" minlength="5" required>
+                    <label for="registerPassword" class="form-label">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           id="registerPassword"
+                           class="form-control"
+                           placeholder="Create a password"
+                           minlength="5"
+                           required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" id="confirmPassword" class="form-control"
-                           placeholder="Re-enter your password" minlength="5" required>
+                    <label for="confirmPassword" class="form-label">
+                        Confirm Password
+                    </label>
+
+                    <input type="password"
+                           id="confirmPassword"
+                           class="form-control"
+                           placeholder="Re-enter your password"
+                           minlength="5"
+                           required>
                 </div>
 
                 <p id="registerMessage" role="alert"></p>
 
-                <button type="submit" class="btn login-button w-100">
+                <button type="submit"
+                        class="btn login-button w-100">
                     Create Account
                 </button>
+
             </form>
 
             <p class="mt-3 text-center">
                 Already have an account?
                 <a href="index.html">Login here</a>
             </p>
+
         </div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
